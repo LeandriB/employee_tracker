@@ -1,14 +1,21 @@
 INSERT INTO department (id, name)
--- TODO: Add values
-VALUES 
-    ()
+VALUES
+    ("Finance"),
+    ("HR"),
+    ("Legal"),
+    ("Sales");
 
 
 INSERT INTO role (id, title, salary, department_id) 
--- TODO: Add values
 VALUES
-    ()
+    ("Accountant", 70000, 1),
+    ("Benefits Manager", 50000, 2),
+    ("Paralegal", 80000, 3),
+    ("Account Executive", 30000, 4);
 
 INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
--- TODO: Add values
-VALUES ();
+VALUES 
+    ('Jenna', 'Smith', 1, NULL),
+    ('Amy', 'Kuyk', 2, NULL),
+    ('Jon', 'Sylvester', 3, NULL),
+    ('Kara', 'Brown', 4, NULL);
