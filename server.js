@@ -1,15 +1,24 @@
-const express = require('express');
+// Required packages
+const mysql = require("mysql2");
+const env = require('dotenv');
+env.config();
 
-const PORT = process.env.PORT || 3001;
-const app = express();
+// Import function to prompt user
+const { initialPrompt } = require('./index');
 
-// Express middleware
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+const db = mysql.createConnection({
+    host: "localhost",
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
 });
 
+db.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected to the employee database.");
+    initialPrompt();
+});
+
+module.exports = { db };
 
 
