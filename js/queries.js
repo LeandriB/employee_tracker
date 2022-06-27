@@ -3,7 +3,7 @@ const menu = [
     {
         type: 'list',
         message: 'Pick an option to view the database: ',
-        choices: ['View all departments', 'View all roles', 'View all employees', 'Add a department', 'Add a role', 'Add an employee'],
+        choices: ['View all departments', 'View all roles', 'View all employees', 'Add a department', 'Add a role', 'Add an employee', 'Exit'],
         name:'menu'
     },
 ]

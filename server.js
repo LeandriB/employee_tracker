@@ -47,6 +47,8 @@ function mainMenu() {
             break;
             // TODO: update and delete employee    
             // TODO: add exit switch case for user
+            case 'Exit':
+                process.exit(0);
         }
     })
 }
