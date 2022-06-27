@@ -21,7 +21,7 @@ db.connect(function(err) {
     mainMenu();
 });
 
-
+// Functions for user prompts
 function mainMenu() {
     inquirer.prompt(menu)
     .then(userInput => {
@@ -119,7 +119,7 @@ function addEmployee() {
     inquirer.prompt(employeeQueries)
     .then(userInput => {
         console.log(userInput)
-        db.query(`INSERT INTO role(first_name, last_name, employee_id, manager_id) VALUES 
+        db.query(`INSERT INTO employee(first_name, last_name, role_id, manager_id) VALUES 
             ('${userInput.firstName}', 
             '${userInput.lastName}',
             ${userInput.employeeRole},
@@ -132,7 +132,5 @@ function addEmployee() {
         })
     })
 }
-
-// module.exports = db;
 
 
