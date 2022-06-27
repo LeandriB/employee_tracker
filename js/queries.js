@@ -3,7 +3,7 @@ const menu = [
     {
         type: 'list',
         message: 'Pick an option to view the database: ',
-        choices: ['View all departments','View all roles','View all employees','Add a department','Add a role','Add an employee','Update an employee role'],
+        choices: ['View all departments', 'View all roles', 'View all employees', 'Add a department', 'Add a role', 'Add an employee'],
         name:'menu'
     },
 ]
@@ -51,7 +51,7 @@ const employeeQueries = [
     {
         type:'input',
         message:'Enter the role for this employee: ',
-        name:'employeeRole'
+        name:'employeeRole' // FIX
     },
     {
         type:'input',
