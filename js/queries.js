@@ -51,12 +51,12 @@ const employeeQueries = [
     {
         type:'input',
         message:'Enter the role for this employee: ',
-        name:'newEmployeeRole'
+        name:'employeeRole'
     },
     {
         type:'input',
         message:'Enter who this employee will report to: ',
-        name:'newEmployeeManager'
+        name:'employeeManager'
     }
 ]
 
