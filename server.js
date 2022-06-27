@@ -4,7 +4,7 @@ const env = require('dotenv');
 env.config();
 
 // Import function to prompt user
-const { initialPrompt } = require('./index');
+const { mainMenu } = require('./index');
 
 const db = mysql.createConnection({
     host: "localhost",
@@ -16,7 +16,7 @@ const db = mysql.createConnection({
 db.connect(function(err) {
     if (err) throw err;
     console.log("Connected to the employee database.");
-    initialPrompt();
+    mainMenu();
 });
 
 module.exports = { db };
