@@ -45,7 +45,8 @@ function mainMenu() {
             case 'Add an employee':
                 addEmployee();
             break;
-            // TODO: update and delete employee    
+            // TODO: update and delete employee
+                
             // TODO: add exit switch case for user
             case 'Exit':
                 process.exit(0);
@@ -92,7 +93,7 @@ function addDepartment() {
             function (err, results) {
                 if (err)
                     throw err;
-                console.log(results);
+                console.table(results);
                 console.log(`${userInput.addDepartment} successfully added`);
         });
         mainMenu();
@@ -110,7 +111,7 @@ function addRole() {
             function (err, results) {
                 if (err) 
                     throw err;
-                console.log(results);
+                console.table(results);
                 console.log(`${userInput.addRole} successfully added`);
         });
         mainMenu();
@@ -129,7 +130,7 @@ function addEmployee() {
             function (err, results) {
                 if (err) 
                     throw err;
-                console.log(results);
+                console.table(results);
                 console.log(`${userInput.firstName} ${userInput.lastName} successfully added`);
         })
     })
