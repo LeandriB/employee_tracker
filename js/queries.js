@@ -51,7 +51,7 @@ const employeeQueries = [
     {
         type:'input',
         message:'Enter the role ID for this employee: ',
-        name:'employeeRole' // FIX
+        name:'employeeRole'
     },
     {
         type:'input',

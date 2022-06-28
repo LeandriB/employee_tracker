@@ -58,6 +58,7 @@ function departments() {
     db.query(sql, function (err, results) {
         if (err) 
             throw err;
+        console.log('\n');
         console.table(results);
     });
     mainMenu();
@@ -68,7 +69,8 @@ function roles() {
     db.query(sql, function (err, results) {
         if (err) 
             throw err;
-        console.table(results);
+        console.log('\n');
+        console.table('\n', results);
     });
     mainMenu();
 }
@@ -78,6 +80,7 @@ function employees() {
     db.query(sql, function (err, results) {
         if (err) 
             throw err;
+        console.log('\n');
         console.table(results);
     });
     mainMenu();
@@ -92,6 +95,7 @@ function addDepartment() {
             function (err, results) {
                 if (err)
                     throw err;
+                console.log('\n');
                 console.table(results);
                 console.log(`${userInput.addDepartment} successfully added`);
         });
@@ -110,6 +114,7 @@ function addRole() {
             function (err, results) {
                 if (err) 
                     throw err;
+                console.log('\n');
                 console.table(results);
                 console.log(`${userInput.addRole} successfully added`);
         });
@@ -129,10 +134,11 @@ function addEmployee() {
             function (err, results) {
                 if (err) 
                     throw err;
+                console.log('\n');
                 console.table(results);
                 console.log(`${userInput.firstName} ${userInput.lastName} successfully added`);
         })
     })
 }
 
-// TODO: Update and Delete employee 
+// TODO: Update and Delete employee functions
