@@ -5,7 +5,6 @@ const env = require('dotenv');
 env.config();
 
 // Import function to prompt user
-// const { mainMenu } = require('./index');
 const { menu, departmentQueries, roleQueries, employeeQueries } = require('./js/queries');
 
 const db = mysql.createConnection({
@@ -136,4 +135,4 @@ function addEmployee() {
     })
 }
 
-
+// TODO: Update and Delete employee 
