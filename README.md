@@ -63,11 +63,19 @@ Start the node application by running:
 
 and follow the user prompts to run through the application.
 
+Run commands in order to view database: 
+
+SELECT * FROM department;
+
+SELECT * FROM role;
+
+SELECT * FROM employee;
+
 ## Usage
 
 ![Preview](./dist/images/preview.png)
 
-Link to [walkthrough](https://youtu.be/IeyOCkKvdhw) video.
+Link to [walkthrough](https://youtu.be/73yaXTDskzo) video.
 
 ## Contributing
 

@@ -70,7 +70,7 @@ function roles() {
         if (err) 
             throw err;
         console.log('\n');
-        console.table('\n', results);
+        console.table(results);
     });
     mainMenu();
 }
@@ -137,7 +137,8 @@ function addEmployee() {
                 console.log('\n');
                 console.table(results);
                 console.log(`${userInput.firstName} ${userInput.lastName} successfully added`);
-        })
+        });
+        mainMenu();
     })
 }
 
