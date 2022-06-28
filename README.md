@@ -73,7 +73,7 @@ SELECT * FROM employee;
 
 ## Usage
 
-![Preview](./dist/images/preview.png)
+![Preview](./images/preview.png)
 
 Link to [walkthrough](https://youtu.be/73yaXTDskzo) video.
 
